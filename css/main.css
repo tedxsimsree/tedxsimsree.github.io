@@ -36,10 +36,6 @@ body{
     background-color: #ce2f2b;
 }
 
-.bannermargin{
-    margin-top: -10px;
-}
-
 /* Global - TED End */
 
 .container{
@@ -54,8 +50,10 @@ ul{
 }
 
 .sections{
-    margin-top: 4.5rem;
+    margin-top: 4rem;
 }
+
+
 
 .sectionTitle h1{
     font-family: 'Libre Baskerville', serif;
@@ -202,6 +200,88 @@ header nav ul li a{
 .navWrapper ul li a:hover{
     color: #000000;
 }
+
+/* TED Homepage Start */
+
+.wrapper .subSec40 {
+    flex-basis: 40%;
+
+}
+
+.wrapper .subSec60{
+    flex-basis: 60%;
+}
+
+.tedLogoContainer img{
+    height: 90px;
+    margin-bottom: 50px;
+}
+
+.countdownTimer {
+    display: flex;
+}
+
+.counter{
+    flex-basis: 25%;
+    text-align: left;
+}
+
+.count{
+    font-size: 3rem;
+    font-weight: 600;
+    color: #ed3833;
+}
+
+.countLabel{
+    color: #898989;
+}
+
+.countdownLabel{
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+.whatContent{
+    margin-top: 30px;
+    line-height: 1.8rem;
+}
+
+.whatMenu{
+    display: flex;
+}
+
+a.whatLink{
+    flex-basis: 33%;
+    padding-top: 5px;
+    text-decoration: none;
+    color: #898989;
+    font-weight: 600;
+}
+
+.tedLink{
+    margin-top: 20px;
+    font-style: italic;
+    color: #898989;
+}
+
+.tedWeb{
+    color: #ff1f05;
+    text-decoration: none;
+}
+
+.showText{
+    display: block;
+}
+
+.hideText{
+    display: none;
+}
+
+.whatLink.active{
+    color: #000000;
+}
+
+/* TED Homepage End */
 
 
 
@@ -835,6 +915,47 @@ a.paraLink:hover{
     }
 
     /*Mobile view Quantix Page End*/
+
+    /* Mobile view TED Home Page Starts*/
+
+    .tedLogoContainer img{
+        height: 85px;
+        margin-bottom: 20px;
+    }
+
+    .wrapper .subSec60 {
+        flex-basis: 100%;
+    }
+
+    .whatMenu {
+        margin-top: 20px;
+        display: flex;
+    }
+
+    a.whatLink {
+        flex-basis: 33%;
+        padding-top: 5px;
+        text-decoration: none;
+        color: #898989;
+        font-weight: 600;
+        font-size: 0.9rem;
+    }
+
+    .whatContent {
+        margin-top: 20px;
+        line-height: 1.8rem;
+        font-size: 0.9rem;
+    }
+
+    .tedLink {
+        margin-top: 20px;
+        font-style: italic;
+        color: #898989;
+        font-size: 0.9rem;
+    }
+
+    /* Mobile view TED Home Page Ends*/
+
 
     /* Mobile Navigation Start*/
     .navWrapper {
