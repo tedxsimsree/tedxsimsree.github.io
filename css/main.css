@@ -36,6 +36,23 @@ body{
     background-color: #ce2f2b;
 }
 
+.sidePad70{
+    padding: 70px 0px;
+}
+
+.csImage{
+    height: 300px;
+    margin-top: 200px;
+}
+
+.tedRed{
+    color: #ed3833;
+}
+
+.tedWhite{
+    color: #fff;
+}
+
 /* Global - TED End */
 
 .container{
@@ -207,6 +224,7 @@ header nav ul li a{
     flex-basis: 40%;
 
 }
+
 
 .wrapper .subSec60{
     flex-basis: 60%;
@@ -932,6 +950,17 @@ a.paraLink:hover{
         display: flex;
     }
 
+    .csImage {
+        height: 270px;
+        padding: auto auto;
+        margin-top: 0px;
+        /* text-align: center; */
+    }
+
+    .sidePad70 {
+        padding: 45px 0px;
+    }
+
     a.whatLink {
         flex-basis: 33%;
         padding-top: 5px;
@@ -953,6 +982,8 @@ a.paraLink:hover{
         color: #898989;
         font-size: 0.9rem;
     }
+
+    
 
     /* Mobile view TED Home Page Ends*/
 
