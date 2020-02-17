@@ -44,8 +44,49 @@ $(document).ready(function(){
         $('.navWrapper ul li').addClass('fadeInUp');
         $('.navWrapper ul li').addClass('delay-1s');
     })
-
-    
     
     
     });
+
+    function myFunct1(){
+		var x = document.getElementById("TEDxSIMSREE");
+		var y = document.getElementById("TEDx");
+		var z = document.getElementById("TED");
+		
+		y.style.display = "none";
+		z.style.display = "none";
+		
+		if (x.style.display === "none") {
+			x.style.display = "block";
+		} else {
+			x.style.display = "block";
+		}
+	}	
+	function myFunct2(){
+		var x = document.getElementById("TEDxSIMSREE");
+		var y = document.getElementById("TEDx");
+		var z = document.getElementById("TED");
+		
+		x.style.display = "none";
+		z.style.display = "none";
+		
+		if (y.style.display === "none") {
+			y.style.display = "block";
+		} else {
+			y.style.display = "block";
+		}
+	}
+	function myFunct3(){
+		var x = document.getElementById("TEDxSIMSREE");
+		var y = document.getElementById("TEDx");
+		var z = document.getElementById("TED");
+		
+		x.style.display = "none";
+		y.style.display = "none";
+		
+		if (z.style.display === "none") {
+			z.style.display = "block";
+		} else {
+			z.style.display = "block";
+		}
+	}

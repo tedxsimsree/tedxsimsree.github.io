@@ -375,6 +375,26 @@ a.whatLink{
     color: #000000;
 }
 
+.whatLink{
+    background: none;
+    outline: none;
+    font-size: 1rem;
+    background-color: none;
+    border: none;
+    text-decoration: none;
+    flex-basis: 33%;
+    padding-top: 5px;
+    text-decoration: none;
+    color: #898989;
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding: 0px;
+    margin-right: 10px;
+    margin-top: 10px;
+    text-align: left;
+    cursor: pointer;
+}
+
 /* TED Homepage End */
 
 
@@ -1043,7 +1063,7 @@ a.paraLink:hover{
     }
 
     .mr1{
-        margin-right: 0.2rem;
+        margin-right: 0.1rem;
     }
 
     .contactName{
@@ -1054,9 +1074,6 @@ a.paraLink:hover{
         margin-top: 50px;
     }
 
-    .midText{
-        
-    }
 
     .contactNo{
         font-size: 0.9rem;
@@ -1073,14 +1090,7 @@ a.paraLink:hover{
         padding: 45px 0px;
     }
 
-    a.whatLink {
-        flex-basis: 33%;
-        padding-top: 5px;
-        text-decoration: none;
-        color: #898989;
-        font-weight: 600;
-        font-size: 0.9rem;
-    }
+    
 
     .whatContent {
         margin-top: 20px;
