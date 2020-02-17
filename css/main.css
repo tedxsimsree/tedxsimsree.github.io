@@ -53,6 +53,39 @@ body{
     color: #fff;
 }
 
+.tedHeading{
+    font-size: 1.8rem;
+    padding: 10px 30px;
+    border-left: 30px solid #ed3833;
+}
+
+.speakerContainer{
+    text-align: center;
+    margin-top: 60px;
+    display: inline;
+    width: 100%;
+}
+
+.speakerBox{
+    display: inline-block;
+    width: 33%;
+    margin-top: 50px;
+}
+
+.speakerName{
+    font-size: 1.2rem;
+    color: #000000;
+    font-weight: 600;
+}
+
+.speakerTitle{
+    color: #565656;
+}
+
+.speakerImgLink{
+    text-decoration: none;
+}
+
 /* Global - TED End */
 
 .container{
@@ -981,6 +1014,25 @@ a.paraLink:hover{
         font-style: italic;
         color: #898989;
         font-size: 0.9rem;
+    }
+
+    .tedHeading {
+        font-size: 1.5rem;
+        padding: 5px 20px;
+        border-left: 15px solid #ed3833;
+    }
+
+    .speakerContainer {
+        text-align: center;
+        margin-top: 30px;
+        display: inline;
+        width: 100%;
+    }
+
+    .speakerBox {
+        display: inline-block;
+        width: 100%;
+        margin-top: 50px;
     }
 
     
