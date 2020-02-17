@@ -29,11 +29,22 @@ body{
     background-color: #ff1f05;
     color: #fff !important;
     padding: 5px 15px;
+    font-size: 0.8rem;
+    text-decoration: none;
+
 }
 
 .redButton:hover{
     color: #fff !important;
     background-color: #ce2f2b;
+}
+
+.mr1{
+    margin-right: 1rem;
+}
+
+.colLogoContainer img{
+    height: 100px;
 }
 
 .sidePad70{
@@ -43,6 +54,14 @@ body{
 .csImage{
     height: 300px;
     margin-top: 200px;
+}
+
+.mt3{
+    margin-top: 3rem;
+}
+
+.mt2{
+    margin-top: 2rem;
 }
 
 .tedRed{
@@ -57,6 +76,7 @@ body{
     font-size: 1.8rem;
     padding: 10px 30px;
     border-left: 30px solid #ed3833;
+    font-weight: 600;
 }
 
 .speakerContainer{
@@ -64,6 +84,10 @@ body{
     margin-top: 60px;
     display: inline;
     width: 100%;
+}
+
+.topSecMargin{
+    margin-top: 110px !important;
 }
 
 .speakerBox{
@@ -144,7 +168,7 @@ ul{
 }
 
 .bigText{
-    font-size: 1.1rem;
+    font-size: 1.8rem;
 }
 
 .lightGrey{
@@ -265,13 +289,21 @@ header nav ul li a{
 /* TED Homepage Start */
 
 .wrapper .subSec40 {
-    flex-basis: 40%;
+    flex-basis: 39%;
 
 }
 
 
 .wrapper .subSec60{
-    flex-basis: 60%;
+    flex-basis: 59%;
+}
+
+.subSec59{
+    flex-basis: 59%;
+}
+
+.subSec39{
+    flex-basis: 39%;
 }
 
 .tedLogoContainer img{
@@ -844,7 +876,7 @@ a.paraLink:hover{
     }
 
     .bigText{
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
 
     .titleWidth{
@@ -994,6 +1026,42 @@ a.paraLink:hover{
         display: flex;
     }
 
+    .subSec39{
+        flex-basis: 100%;
+    }
+
+    .subSec59{
+        flex-basis: 100%;
+    }
+
+    .redButton {
+        background-color: #ff1f05;
+        color: #fff !important;
+        padding: 5px 15px;
+        font-size: 0.7rem;
+        text-decoration: none;
+    }
+
+    .mr1{
+        margin-right: 0.2rem;
+    }
+
+    .contactName{
+        font-size: 0.9rem;
+    }
+
+    .colLogoContainer{
+        margin-top: 50px;
+    }
+
+    .midText{
+        
+    }
+
+    .contactNo{
+        font-size: 0.9rem;
+    }
+
     .csImage {
         height: 270px;
         padding: auto auto;
@@ -1016,7 +1084,7 @@ a.paraLink:hover{
 
     .whatContent {
         margin-top: 20px;
-        line-height: 1.8rem;
+        line-height: 1.5rem;
         font-size: 0.9rem;
     }
 
@@ -1049,10 +1117,16 @@ a.paraLink:hover{
     .sponsorBox{
         display: inline-block;
         width: 100%;
-        margin-top: 50px;
+        margin-top: 20px;
     }
 
-    
+    .colLogoContainer img {
+        height: 80px;
+    }
+
+    .topSecMargin {
+        margin-top: 50px !important;
+    }
 
     /* Mobile view TED Home Page Ends*/
 
@@ -1075,6 +1149,7 @@ a.paraLink:hover{
         top: 50%;
         transform: translateY(-50%);
         width: 100%;
+        margin-top: 10%;
     }
 
     .navWrapper ul li {
