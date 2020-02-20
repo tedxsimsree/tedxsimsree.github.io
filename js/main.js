@@ -52,6 +52,15 @@ $(document).ready(function(){
 		var x = document.getElementById("TEDxSIMSREE");
 		var y = document.getElementById("TEDx");
 		var z = document.getElementById("TED");
+
+		var a = document.getElementById("tedXSButton");
+		var b = document.getElementById("tedXButton");
+		var c = document.getElementById("tedButton");
+
+		a.style.color = "#000";
+		b.style.color = "#898989";
+		c.style.color = "#898989";
+
 		
 		y.style.display = "none";
 		z.style.display = "none";
@@ -66,6 +75,15 @@ $(document).ready(function(){
 		var x = document.getElementById("TEDxSIMSREE");
 		var y = document.getElementById("TEDx");
 		var z = document.getElementById("TED");
+
+		var a = document.getElementById("tedXSButton");
+		var b = document.getElementById("tedXButton");
+		var c = document.getElementById("tedButton");
+
+		b.style.color = "#000";
+		a.style.color = "#898989";
+		c.style.color = "#898989";
+
 		
 		x.style.display = "none";
 		z.style.display = "none";
@@ -80,6 +98,14 @@ $(document).ready(function(){
 		var x = document.getElementById("TEDxSIMSREE");
 		var y = document.getElementById("TEDx");
 		var z = document.getElementById("TED");
+
+		var a = document.getElementById("tedXSButton");
+		var b = document.getElementById("tedXButton");
+		var c = document.getElementById("tedButton");
+
+		c.style.color = "#000";
+		b.style.color = "#898989";
+		a.style.color = "#898989";
 		
 		x.style.display = "none";
 		y.style.display = "none";
