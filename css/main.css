@@ -413,6 +413,28 @@ a.whatLink{
 
 .profileContainer{
     margin-top: 3rem;
+    margin-bottom: 3rem;;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.dpContainer{
+    flex-basis: 29%;
+}
+
+.profileDesc{
+    flex-basis: 69%;
+}
+
+.profileName{
+    font-size: 1.8rem;
+    color: #000000;
+    font-weight: 600;
+}
+
+.profileSub{
+    font-size: 1.2rem;
+    color: #a0a0a0;
 }
 
 /* Case Study Boxes */
@@ -660,6 +682,7 @@ section#subPage{
 .seperator{
     border: 1px solid #efefef;
     margin: 1em 0em;
+    width: 100%;
 }
 
 .subWrapper{
@@ -1158,6 +1181,34 @@ a.paraLink:hover{
     }
 
     /* Mobile view TED Home Page Ends*/
+
+    /* Mobile view Speaker Page Start*/
+
+    .profileContainer {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .dpContainer {
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    .profileDesc {
+        flex-basis: 100%;
+    }
+
+    .pageHeading {
+        font-size: 2.5rem;
+    }
+
+    .profDetail{
+        text-align: center;
+    }
+
+    /* Mobile view Speaker Page End*/
 
 
     /* Mobile Navigation Start*/
