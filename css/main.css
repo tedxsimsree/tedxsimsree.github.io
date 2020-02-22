@@ -437,6 +437,34 @@ a.whatLink{
     color: #a0a0a0;
 }
 
+/* TED Speakers End */
+
+/* TED Team Start */
+
+.teamContainer{
+    display: flex;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+    width: 100%;
+    text-align: center;
+}
+
+.teamMember{
+    flex-basis: 25%;
+    margin: 20px 0px;
+}
+
+.memberName{
+    margin: 10px 0px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #000;
+}
+
+.teamMember img{
+    border-radius: 50%;
+}
+
 /* Case Study Boxes */
 
 section#boxes {
@@ -1210,6 +1238,24 @@ a.paraLink:hover{
 
     /* Mobile view Speaker Page End*/
 
+
+    /* Mobile view Team Page Starts */
+    .teamMember {
+        flex-basis: 44%;
+        margin: 20px 10px;
+    }
+
+    .teamMember img {
+        height: 150px;
+        border-radius: 50%;
+    }
+
+    .memberName {
+        margin: 10px 0px;
+        font-size: 1rem;
+        font-weight: 600;
+        color: #000;
+    }
 
     /* Mobile Navigation Start*/
     .navWrapper {
