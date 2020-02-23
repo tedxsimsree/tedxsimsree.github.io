@@ -1212,6 +1212,22 @@ a.paraLink:hover{
         width: 100%;
     }
 
+    .footContainer {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+        font-size: 0.7rem;
+    }
+
+    .footTed {
+        flex-basis: 100%;
+    }
+
+    .footAuthor {
+        flex-basis: 100%;
+        text-align: left;
+    }
+
     .speakerBox {
         display: inline-block;
         width: 100%;
@@ -1296,7 +1312,7 @@ a.paraLink:hover{
 
     .navWrapper ul{
         position: absolute;
-        top: 50%;
+        top: 45%;
         transform: translateY(-50%);
         width: 100%;
         margin-top: 20%;
