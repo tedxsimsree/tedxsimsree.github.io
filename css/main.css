@@ -148,7 +148,25 @@ ul{
     margin-top: 4rem;
 }
 
+.footContainer{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
 
+.footLink{
+    text-decoration: none;
+    color: #000;
+}
+
+.footTed{
+    flex-basis: 50%;
+}
+
+.footAuthor{
+    flex-basis: 50%;
+    text-align: right;
+}
 
 .sectionTitle h1{
     font-family: 'Libre Baskerville', serif;
