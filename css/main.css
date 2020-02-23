@@ -47,6 +47,16 @@ body{
     height: 100px;
 }
 
+.smLink{
+    text-decoration: none;
+    margin-right: 1rem;
+}
+
+.smLink svg:hover {
+    stroke: #ff1f05;
+    transition: all ease 0.3s;
+  }
+
 .sidePad70{
     padding: 70px 0px;
 }
@@ -1132,10 +1142,6 @@ a.paraLink:hover{
         text-decoration: none;
     }
 
-    .mr1{
-        margin-right: 0.1rem;
-    }
-
     .contactName{
         font-size: 0.9rem;
     }
@@ -1351,6 +1357,46 @@ a.paraLink:hover{
     }
 
     /* Mobile Navigation End*/
+}
+
+@media (max-width: 320px) {
+
+    .tedLogoContainer img {
+        height: 65px;
+        margin-bottom: 20px;
+    }
+
+    .csImage {
+        height: 210px;
+        padding: auto auto;
+    }
+
+    img.tedSpeaker{
+        height: 210px;
+    }
+
+    .colLogoContainer img {
+        height: 70px;
+    }
+
+    .teamMember {
+        flex-basis: 41%;
+        margin: 20px 10px;
+    }
+
+    .teamMember img {
+        height: 100px;
+        border-radius: 50%;
+    }
+
+    section#subPage {
+        margin-top: 6rem;
+    }
+
+    .pageHeading {
+        font-size: 2rem;
+    }
+
 }
 
 
