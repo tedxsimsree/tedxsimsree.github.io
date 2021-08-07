@@ -1,34 +1,31 @@
 $(document).ready(function(){
     
-   
-    //Countdown Timer
+   (function () {
+  const second = 1000,
+        minute = second * 60,
+        hour = minute * 60,
+        day = hour * 24;
 
-    var countDownDate = new Date("Feb 26, 2020 15:37:25").getTime();
+  let event = "Aug 12, 2021 00:00:00",
+      countDown = new Date(event).getTime(),
+      x = setInterval(function() {    
 
-    // Update the count down every 1 second
-    var x = setInterval(function() {
+        let now = new Date().getTime(),
+            distance = countDown - now;
 
-    // Get today's date and time
-    var now = new Date().getTime();
+        document.getElementById("days").innerText = Math.floor(distance / (day)),
+          document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
+          document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
+          document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
 
-    // Find the distance between now and the count down date
-    var distance = countDownDate - now;
-
-    // Time calculations for days, hours, minutes and seconds
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-
-    document.getElementById("countDays").innerHTML = days;
-    document.getElementById("countHours").innerHTML = hours;
-    document.getElementById("countMins").innerHTML = minutes;
-    document.getElementById("countSecs").innerHTML = seconds;
-
-    
-    }, 1000);
-
+        //do something later when date is reached
+        if (distance < 0) {
+          $(".countdown_timer").hide()
+          
+        }
+        //seconds
+      }, 0)
+  }());
     //Wow JS integration
     new WOW().init();
 
@@ -116,3 +113,27 @@ $(document).ready(function(){
 			z.style.display = "block";
 		}
 	}
+
+	function changeAtiveTab(event,tabID){
+    let element = event.target;
+    while(element.nodeName !== "A"){
+      element = element.parentNode;
+    }
+    ulElement = element.parentNode.parentNode;
+    aElements = ulElement.querySelectorAll("li > a");
+    tabContents = document.getElementById("tabs-id").querySelectorAll(".tab-content > div");
+    for(let i = 0 ; i < aElements.length; i++){
+      aElements[i].classList.remove("text-white");
+      aElements[i].classList.remove("bg-red-600");
+      aElements[i].classList.add("text-red-600");
+      aElements[i].classList.add("bg-white");
+      tabContents[i].classList.add("hidden");
+      tabContents[i].classList.remove("block");
+    }
+    element.classList.remove("text-red-600");
+    element.classList.remove("bg-white");
+    element.classList.add("text-white");
+    element.classList.add("bg-red-600");
+    document.getElementById(tabID).classList.remove("hidden");
+    document.getElementById(tabID).classList.add("block");
+  }
