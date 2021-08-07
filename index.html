@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>TEDxSIMSREE</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="./css/animate.css">
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" media="screen" href="./css/main.css">
@@ -18,32 +18,55 @@
     <header>
         <div class="container">
             <nav>
-            <input type="checkbox" name="menu" id="nav" class="hidden">
-            <label for="nav" class="navButton">
-                <i></i>
-                <i></i>
-                <i></i>
-            </label>
-            
-            <div class="logo">
-                <a href="./index.html" title="TEDxSIMSREE"><img src="./images/TEDxSIMSREE1.png" alt="TEDxSIMSREE"></a>
-            </div>
-            <div id="navWrap" class="navWrapper">
-                <ul>
-                    <li><a class="active" href="./index.html">HOME</a></li>
-                    <li><a href="./pages/speakers.html">SPEAKERS</a></li>
-                    <li><a href="./pages/team.html">TEAM</a></li>
-                    <li><a href="./pages/contactus.html">CONTACT US</a></li>
-                    <li><a class="redButton" href="https://forms.gle/R94UPH2UE9Gm2nmM7">REGISTER</a></li>
-                </ul>
-            </div>
-            
+                <input type="checkbox" name="menu" id="nav" class="hidden">
+                <label for="nav" class="navButton">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </label>
+                <div class="logo">
+                    <a href="./index.html" title="TEDxSIMSREE"><img src="./images/TEDxSIMSREE1.png" alt="TEDxSIMSREE"></a>
+                </div>
+                <div id="navWrap" class="navWrapper">
+                    <ul>
+                        <li><a class="active" href="./index.html">HOME</a></li>
+                        <li><a href="./pages/speakers.html">SPEAKERS</a></li>
+                        <li><a href="./pages/team.html">TEAM</a></li>
+                        <li><a href="./pages/contactus.html">CONTACT US</a></li>
+                        <li><a class="redButton" href="https://forms.gle/R94UPH2UE9Gm2nmM7">REGISTER</a></li>
+                    </ul>
+                </div>
             </nav>
         </div>
     </header>
-
     <div class="sections">
-       
+        <div class="container countdown_timer pt-5 pb-5">
+  <div class="min-w-screen bg-yellow-500 flex items-center justify-center px-5 py-5">
+  <div class="text-yellow-100">
+    <h1 class="text-3xl text-center mb-3 font-extralight"><span style="color:#ff1f05">TEDx SIMSREE</span> 2021 Event in</h1>
+    <div class="text-6xl text-center flex w-full items-center justify-center">
+      <div class="text-2xl mr-1 font-extralight">in</div>
+      <div class="w-24 mx-1 p-2 bg-white text-yellow-500 rounded-lg">
+        <div class="font-mono leading-none" x-text="days" id="days">00</div>
+        <div class="font-mono uppercase text-sm leading-none">Days</div>
+      </div>
+      <div class="w-24 mx-1 p-2 bg-white text-yellow-500 rounded-lg">
+        <div class="font-mono leading-none" x-text="hours" id="hours">00</div>
+        <div class="font-mono uppercase text-sm leading-none">Hours</div>
+      </div>
+      <div class="w-24 mx-1 p-2 bg-white text-yellow-500 rounded-lg">
+        <div class="font-mono leading-none" x-text="minutes" id="minutes">00</div>
+        <div class="font-mono uppercase text-sm leading-none">Minutes</div>
+      </div>
+      <div class="text-2xl mx-1 font-extralight">and</div>
+      <div class="w-24 mx-1 p-2 bg-white text-yellow-500 rounded-lg">
+        <div class="font-mono leading-none" x-text="seconds" id="seconds">00</div>
+        <div class="font-mono uppercase text-sm leading-none">Seconds</div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
         <!-- Image Section Start -->
         <section id="imageFull" class="bannermargin">
             <div class="fullImageWrapper wow animated fadeInUp">
@@ -51,7 +74,6 @@
             </div>
         </section>
         <!-- Image Section End -->
-
         <!-- TED About Start -->
         <section id="sub">
             <div class="container wow animated fadeInUp">
@@ -60,36 +82,60 @@
                         <div class="tedLogoContainer">
                             <img src="./images/TEDxSIMSREE1.png" alt="TEDxSIMSREE">
                         </div>
-                       
-              
                     </div>
                     <div class="subSec60 whatContainer">
-                        <div class="whatSection">
-                            <div class="whatMenu">
-                                <button id="tedXSButton" class="whatLink whatActive" onclick="myFunct1()">TEDxSIMSREE</button>
-                                <button id="tedXButton" class="whatLink" onclick="myFunct2()">TEDx</button>
-                                <button id="tedButton" class="whatLink" onclick="myFunct3()">TED</button>
-                            </div>
-                            <div class="whatContent showText" id="TEDxSIMSREE">
-                                    TEDxSIMSREE is an independently organised TED-like event by Sydenham Institute of Management Studies, 
-                                    Research and Entrepreneurship Education. Our vision is to make TEDxSIMSREE a platform where 
-                                    community-driven people can showcase their ideas that will lead to a change in attitudes, lives and, 
-                                    ultimately, the world.
-                            </div>
-                            <div class="whatContent" id="TEDx" style="display:none;">
-                                The TEDx Program is designed to help communities, organizations and individuals to spark conversation and connection through 
-                                local TED-like experiences. At TEDx events, a screening of TED Talks videos — or a combination of live presenters and TED
-                                Talks videos — sparks deep conversation and connections at the local level. TEDx events are planned and coordinated 
-                                independently, under a free license granted by TED.
-                            </div>
-                            <div class="whatContent" id="TED" style="display:none;">
-                                TED is a nonprofit organization devoted to spreading ideas, usually in the form of short, powerful talks. TED began in 1984 
-                                as a conference where Technology, Entertainment and Design converged, and today covers almost all topics — from science to 
-                                business to global issues — in more than 100 languages. It is a global community, welcoming people from every discipline 
-                                and culture who seek a deeper understanding of the world.
-                            </div>
-                            <div class="tedLink">
+                        <div class="flex flex-wrap" id="tabs-id">
+                            <div class="w-full">
+                                <ul class="flex mb-0 list-none flex-wrap pt-3 pb-4 flex-row">
+                                    <li class="-mb-px mr-2 last:mr-0 flex-auto text-center">
+                                        <a class="text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal text-white bg-red-600" onclick="changeAtiveTab(event,'tab-profile')">
+                                            TEDxSIMSREE
+                                        </a>
+                                    </li>
+                                    <li class="-mb-px mr-2 last:mr-0 flex-auto text-center">
+                                        <a class="text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal text-red-600 bg-white" onclick="changeAtiveTab(event,'tab-settings')">
+                                            TEDx
+                                        </a>
+                                    </li>
+                                    <li class="-mb-px mr-2 last:mr-0 flex-auto text-center">
+                                        <a class="text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal text-red-600 bg-white" onclick="changeAtiveTab(event,'tab-options')">
+                                            TED
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded border border-gray-400">
+                                    <div class="px-4 py-5 flex-auto">
+                                        <div class="tab-content tab-space leading-7">
+                                            <div class="block" id="tab-profile">
+                                                <p>
+                                                    TEDxSIMSREE is an independently organised TED-like event by Sydenham Institute of Management Studies,
+                                                    Research and Entrepreneurship Education. Our vision is to make TEDxSIMSREE a platform where
+                                                    community-driven people can showcase their ideas that will lead to a change in attitudes, lives and,
+                                                    ultimately, the world.
+                                                </p>
+                                            </div>
+                                            <div class="hidden" id="tab-settings">
+                                                <p>
+                                                    The TEDx Program is designed to help communities, organizations and individuals to spark conversation and connection through
+                                                    local TED-like experiences. At TEDx events, a screening of TED Talks videos — or a combination of live presenters and TED
+                                                    Talks videos — sparks deep conversation and connections at the local level. TEDx events are planned and coordinated
+                                                    independently, under a free license granted by TED.
+                                                </p>
+                                            </div>
+                                            <div class="hidden" id="tab-options">
+                                                <p>
+                                                    TED is a nonprofit organization devoted to spreading ideas, usually in the form of short, powerful talks. TED began in 1984
+                                                    as a conference where Technology, Entertainment and Design converged, and today covers almost all topics — from science to
+                                                    business to global issues — in more than 100 languages. It is a global community, welcoming people from every discipline
+                                                    and culture who seek a deeper understanding of the world.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tedLink">
                                     Get to know TED better by visiting <a class="tedWeb" href="https://www.ted.com/">www.ted.com</a> and watching talks that inspire you.
+                            </div>
                             </div>
                         </div>
                     </div>
@@ -97,7 +143,6 @@
             </div>
         </section>
         <!-- TED About End -->
-
         <!-- About Theme Start -->
         <section id="sub" style="background-color: #363636">
             <div class="container wow animated fadeInUp">
@@ -108,156 +153,85 @@
                     <div class="subSec60 sidePad70">
                         <div class="countdownLabel tedRed">ABOUT THEME</div>
                         <div class="whatContent tedWhite">
-                                Space had three dimensions until we discovered the fourth, the fifth and now we have ten strung to the impeccable yarn 
-                                of humankind's past. Unfortunately, every dimension that we discovered constricted the discernible space. By the time the 
-                                temporal dimension was unearthed, we had begun scrambling for more, leaving us with lesser; lesser space. The walls of buildings 
-                                drew closer and the roofs rocketed to the sky. We called them skyscrapers. The individuality of thoughts shrank to miniscule spheres 
-                                and hoards of them meandered aimlessly in our minds. We called it anxiety and confusion.
-                                The harbingers of a nation, its pride and its land, we called them nationalists and the advocates of the proletariat, we called them 
-                                socialists. They polarised the general public, kindled hatred amongst them and we called it a dual-party democracy.
-                                We burnt forests, broke mountains, created artificial islands in oceans and we called it development.
-                                Thus, every space shrank, and shrank, and shrank, while new dimensions were added to it. Spaces and voids are important so 
-                                that we can empty the tangible and intangible toxicity that exists in this world. A shrinking space with no spaces is bound to 
-                                burst due to flooding of substance in it. The grim question that needs to be asked in the present times is, "How do we CREATE SPACES?
+                            Space had three dimensions until we discovered the fourth, the fifth and now we have ten strung to the impeccable yarn
+                            of humankind's past. Unfortunately, every dimension that we discovered constricted the discernible space. By the time the
+                            temporal dimension was unearthed, we had begun scrambling for more, leaving us with lesser; lesser space. The walls of buildings
+                            drew closer and the roofs rocketed to the sky. We called them skyscrapers. The individuality of thoughts shrank to miniscule spheres
+                            and hoards of them meandered aimlessly in our minds. We called it anxiety and confusion.
+                            The harbingers of a nation, its pride and its land, we called them nationalists and the advocates of the proletariat, we called them
+                            socialists. They polarised the general public, kindled hatred amongst them and we called it a dual-party democracy.
+                            We burnt forests, broke mountains, created artificial islands in oceans and we called it development.
+                            Thus, every space shrank, and shrank, and shrank, while new dimensions were added to it. Spaces and voids are important so
+                            that we can empty the tangible and intangible toxicity that exists in this world. A shrinking space with no spaces is bound to
+                            burst due to flooding of substance in it. The grim question that needs to be asked in the present times is, "How do we CREATE SPACES?
                         </div>
                     </div>
                 </div>
             </div>
         </section>
         <!-- About Theme End -->
-
         <!-- Speaker Section Start-->
-        <section id="sub">
+         <section id="sub">
             <div class="container wow animated fadeInUp">
                 <div class="tedHeading">Speakers</div>
-                <div class="wrapper">    
-                    <div class="speakerContainer">
-                        <div class="speakerBox">
-                            
-                                <img class="tedSpeaker" src="./images/AS.png" alt="Aditya Singh">
-                                <div class="speakerInfo">
-                                    <div class="speakerName">Aditya Singh</div>
-                                    <div class="speakerTitle">Child Scientist</div>
-                                </div>
-                           
-                        </div>
-
-                        <div class="speakerBox">
-                            
-                                <img class="tedSpeaker" src="./images/AG.png" alt="Arnesh Ghosh">
-                                <div class="speakerInfo">
-                                    <div class="speakerName">Arnesh Ghosh</div>
-                                    <div class="speakerTitle">Journalist/Creative Producer</div>
-                                </div>
-                           
-                        </div>
-
-                        <div class="speakerBox">
-                            
-                                <img class="tedSpeaker" src="./images/DS.png" alt="Daaniyal S">
-                                <div class="speakerInfo">
-                                    <div class="speakerName">Daaniyal S</div>
-                                    <div class="speakerTitle">Co-Founder of Spill Poetry</div>
-                                </div>
-                           
-                        </div>
-
-                        <div class="speakerBox">
-                            
-                                <img class="tedSpeaker" src="./images/IV.png" alt="Imtiyaz Vilatra">
-                                <div class="speakerInfo">
-                                    <div class="speakerName">Imtiyaz Vilatra</div>
-                                    <div class="speakerTitle">Sr Vice President</div>
-                                </div>
-                           
-                        </div>
-
-                        <div class="speakerBox">
-                            
-                                <img class="tedSpeaker" src="./images/KC.png" alt="Kersi Chavda">
-                                <div class="speakerInfo">
-                                    <div class="speakerName">Kersi Chavda</div>
-                                    <div class="speakerTitle">Consultant Psychiatry</div>
-                                </div>
-                        
-                        </div>
-
-                        <div class="speakerBox">
-                           
-                                <img class="tedSpeaker" src="./images/KP.png" alt="Kerul Patel">
-                                <div class="speakerInfo">
-                                    <div class="speakerName">Kerul Patel</div>
-                                    <div class="speakerTitle">Cancer Survivor</div>
-                                </div>
-                         
-                        </div>
-
-                       <div class="speakerBox">
-                           
-                                <img class="tedSpeaker" src="./images/MAli.png" alt="Mohammed Ali Shah">
-                                <div class="speakerInfo">
-                                    <div class="speakerName">Major Mohammed Ali Shah</div>
-                                    <div class="speakerTitle">Actor</div>
-                                </div>
-                          
-                        </div>
-
-                        <div class="speakerBox">
-                            
-                                <img class="tedSpeaker" src="./images/OE.png" alt="Olly Esse">
-                                <div class="speakerInfo">
-                                    <div class="speakerName">Olly Esse</div>
-                                    <div class="speakerTitle">Italian DJ</div>
-                                </div>
-                          
-                        </div>
-
-                        <div class="speakerBox">
-                            
-                                <img class="tedSpeaker" src="./images/VW.png" alt="Tarun Walia">
-                                <div class="speakerInfo">
-                                    <div class="speakerName">Tarun Walia</div>
-                                    <div class="speakerTitle">Biotechnologist</div>
-                                </div>
-                          
-                        </div>
-
-                        <div class="speakerBox">
-                            
-                                <img class="tedSpeaker" src="./images/VF.png" alt="Vishakha Fulsunge">
-                                <div class="speakerInfo">
-                                    <div class="speakerName">Vishakha Fulsunge</div>
-                                    <div class="speakerTitle">Youtuber, Motovlogger</div>
-                                </div>
-                           
-                        </div>
-
-                        <div class="speakerBox">
-                            
-                                <img class="tedSpeaker" src="./images/KC1.png" alt="Karishma Chavan">
-                                <div class="speakerInfo">
-                                    <div class="speakerName">Karishma Chavan</div>
-                                    <div class="speakerTitle">Choreographer</div>
-                                </div>
-                           
-                        </div>
-
-                        <div class="speakerBox">
-                            
-                                <img class="tedSpeaker" src="./images/PP.png" alt="Pearl V Puri">
-                                <div class="speakerInfo">
-                                    <div class="speakerName">Pearl V Puri</div>
-                                    <div class="speakerTitle">Indian Television Actor, Writer, Lyricist and Composer</div>
-                                </div>
-                           
-                        </div>
-
-                    </div>
-                </div>
             </div>
         </section>
-        <!-- Speaker Section End-->
+        
+  <!--      <div class="mt-10">
+  <div class="grid grid-cols-1 gap-4 md:grid-cols-3 sm:grid-cols-2 place-items-center gap-y-8">
+    <div class="grid-row text-center">
+      <div class="bg-red-600 rounded-full h-48 w-48 flex items-end justify-center">
+        <img src="https://images.unsplash.com/photo-1628038341191-8e7448fc8209?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" 
+        class="w-32 h-32 object-cover rounded-lg hover:scale-110 transform transition duration-500" />
+      </div>
+      <div class="text-xl pt-2 font-semibold">Name Surname</div>
+      <div class="text-gray-700">Profession</div>
+    </div>
+    <div class="grid-row text-center">
+      <div class="bg-red-600 rounded-full h-48 w-48 flex items-end justify-center">
+        <img src="https://images.unsplash.com/photo-1628038341191-8e7448fc8209?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" 
+        class="w-32 h-32 object-cover rounded-lg hover:scale-110 transform transition duration-500" />
+      </div>
+      <div class="text-xl pt-2 font-semibold">Name Surname</div>
+      <div class="text-gray-700">Profession</div>
+    </div>
+    <div class="grid-row text-center">
+      <div class="bg-red-600 rounded-full h-48 w-48 flex items-end justify-center">
+        <img src="https://images.unsplash.com/photo-1628038341191-8e7448fc8209?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" 
+        class="w-32 h-32 object-cover rounded-lg hover:scale-110 transform transition duration-500" />
+      </div>
+      <div class="text-xl pt-2 font-semibold">Name Surname</div>
+      <div class="text-gray-700">Profession</div>
+    </div>
+    <div class="grid-row text-center">
+      <div class="bg-red-600 rounded-full h-48 w-48 flex items-end justify-center">
+        <img src="https://images.unsplash.com/photo-1628038341191-8e7448fc8209?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" 
+        class="w-32 h-32 object-cover rounded-lg hover:scale-110 transform transition duration-500" />
+      </div>
+      <div class="text-xl pt-2 font-semibold">Name Surname</div>
+      <div class="text-gray-700">Profession</div>
+    </div>
+    <div class="grid-row text-center">
+      <div class="bg-red-600 rounded-full h-48 w-48 flex items-end justify-center">
+        <img src="https://images.unsplash.com/photo-1628038341191-8e7448fc8209?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" 
+        class="w-32 h-32 object-cover rounded-lg hover:scale-110 transform transition duration-500" />
+      </div>
+      <div class="text-xl pt-2 font-semibold">Name Surname</div>
+      <div class="text-gray-700">Profession</div>
+    </div>
+    <div class="grid-row text-center">
+      <div class="bg-red-600 rounded-full h-48 w-48 flex items-end justify-center">
+        <img src="https://images.unsplash.com/photo-1628038341191-8e7448fc8209?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" 
+        class="w-32 h-32 object-cover rounded-lg hover:scale-110 transform transition duration-500" />
+      </div>
+      <div class="text-xl pt-2 font-semibold">Name Surname</div>
+      <div class="text-gray-700">Profession</div>
+    </div>
+  </div>
+</div> -->
 
+       
+        <!-- Speaker Section End-->
         <!-- Sponsors Section Start -->
         <section id="sub" class="greySection">
             <div class="container wow animated fadeInUp">
@@ -273,33 +247,32 @@
                                 </div>
                             </a>
                         </div>
-                    
                         <div class="sponsorBox">
-                                <a class="speakerImgLink" href="https://www.keventers.com/" target="_blank">
-                                    <img class="tedSpeaker" src="./images/keventers.png" alt="Keventers">
-                                    <div class="speakerInfo">
-                                        <div class="speakerName">Keventers</div>
-                                        <div class="speakerTitle">Refreshment Partner</div>
-                                    </div>
-                                </a>
+                            <a class="speakerImgLink" href="https://www.keventers.com/" target="_blank">
+                                <img class="tedSpeaker" src="./images/keventers.png" alt="Keventers">
+                                <div class="speakerInfo">
+                                    <div class="speakerName">Keventers</div>
+                                    <div class="speakerTitle">Refreshment Partner</div>
+                                </div>
+                            </a>
                         </div>
                         <div class="sponsorBox">
-                                <a class="speakerImgLink" href="https://www.freepressjournal.in/" target="_blank">
-                                    <img class="tedSpeaker" src="./images/fpj.png" alt="Free Press Journal">
-                                    <div class="speakerInfo">
-                                        <div class="speakerName">Free Press Journal</div>
-                                        <div class="speakerTitle">News Partner</div>
-                                    </div>
-                                </a>
+                            <a class="speakerImgLink" href="https://www.freepressjournal.in/" target="_blank">
+                                <img class="tedSpeaker" src="./images/fpj.png" alt="Free Press Journal">
+                                <div class="speakerInfo">
+                                    <div class="speakerName">Free Press Journal</div>
+                                    <div class="speakerTitle">News Partner</div>
+                                </div>
+                            </a>
                         </div>
                         <div class="sponsorBox">
-                                <a class="speakerImgLink" href="https://www.mcdonaldsindia.com/home.html" target="_blank">
-                                    <img class="tedSpeaker" src="./images/McD.png" alt="McD">
-                                    <div class="speakerInfo">
-                                        <div class="speakerName">McDonalds</div>
-                                        <div class="speakerTitle">Snack Partner</div>
-                                    </div>
-                                </a>
+                            <a class="speakerImgLink" href="https://www.mcdonaldsindia.com/home.html" target="_blank">
+                                <img class="tedSpeaker" src="./images/McD.png" alt="McD">
+                                <div class="speakerInfo">
+                                    <div class="speakerName">McDonalds</div>
+                                    <div class="speakerTitle">Snack Partner</div>
+                                </div>
+                            </a>
                         </div>
                         <div class="sponsorBox">
                             <a class="speakerImgLink" href="https://moddelivery.in/order-online/" target="_blank">
@@ -342,7 +315,6 @@
             </div>
         </section>
         <!-- Sponsors Section End -->
-
         <!-- Contact Us Start -->
         <section id="sub">
             <div class="container wow animated fadeInUp">
@@ -370,18 +342,29 @@
                         <div class="connectUs mt3">
                             <div class="bigText">Connect with Us</div>
                             <div class="lightGrey mt1">Write to us or follow TEDxSIMSREE on Social Media <br> to get more behind the scene updates</div>
-                            <div class="buttonGroup mt1">
+                            <div class="buttonGroup mt1 flex">
                                 <a class="smLink mr1" href="mailto:tedxsimsree@simsree.org?Subject=TEDxSIMSREE%20Contact">
-                                    <svg xmlns="https://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#ff1f05" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                                    <svg xmlns="https://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#ff1f05" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                        <polyline points="22,6 12,13 2,6"></polyline>
+                                    </svg>
                                 </a>
                                 <a class="smLink mr1" href="https://www.facebook.com/TEDx-Simsree-105098134345099/" target="_blank">
-                                    <svg xmlns="https://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#ff1f05" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                                    <svg xmlns="https://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#ff1f05" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-facebook">
+                                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                                    </svg>
                                 </a>
                                 <a class="smLink mr1" href="https://www.instagram.com/tedxsimsree_/" target="_blank">
-                                    <svg xmlns="https://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#ff1f05" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                                    <svg xmlns="https://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#ff1f05" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram">
+                                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                                    </svg>
                                 </a>
-                                <a class="smLink mr1" href="https://twitter.com/TEDxSIMSREE" target="_blank">
-                                    <svg xmlns="https://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#ff1f05" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+                                <a class="smLink ml-1" href="https://twitter.com/TEDxSIMSREE" target="_blank">
+                                    <svg xmlns="https://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#ff1f05" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter">
+                                        <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                                    </svg>
                                 </a>
                             </div>
                         </div>
@@ -389,18 +372,18 @@
                     <div class="subSec39">
                         <div class="collegeIno">
                             <div class="colLogoContainer">
-                                <img  src="./images/SIMSREE_logo.png" alt="SIMSREE logo">
+                                <img src="./images/SIMSREE_logo.png" alt="SIMSREE logo">
                                 <div class="contactNo lightGrey mt1">
-                                        In keeping with the rich Sydenham tradition of imparting high quality education, the Sydenham Institute of Management Studies, 
-                                        Research and Entrepreneurship Education (SIMSREE) was founded in the year 1983. <br> Since then, SIMSREE has endeavoured 
-                                        to produce global managers of shining excellence. Today, 35 years after its inception, SIMSREE stands as one of the
-                                         most popular management institutes in India.
+                                    In keeping with the rich Sydenham tradition of imparting high quality education, the Sydenham Institute of Management Studies,
+                                    Research and Entrepreneurship Education (SIMSREE) was founded in the year 1983. <br> Since then, SIMSREE has endeavoured
+                                    to produce global managers of shining excellence. Today, 35 years after its inception, SIMSREE stands as one of the
+                                    most popular management institutes in India.
                                 </div>
                             </div>
                             <div class="colAddress mt2">
                                 <div class="contactName">Address</div>
                                 <div class="contactNo lightGrey mt1">
-                                        B Rd, Churchgate, Mumbai, Maharashtra 400020
+                                    B Rd, Churchgate, Mumbai, Maharashtra 400020
                                 </div>
                             </div>
                             <div class="mt1">
@@ -411,19 +394,15 @@
                 </div>
             </div>
         </section>
-
-
         <!-- Footer Start -->
         <footer>
             <div class="container footContainer">
-                <div class="lightGrey footTed">© TEDxSIMSREE | 2020</div>
-                <div class="lightGrey footAuthor">Designed and Developed by <a class="footLink" href="https://shubhamgawande.github.io/">Shubham Gawande</a></div>
+                <div class="lightGrey footTed">© TEDxSIMSREE | 2021</div>
+                <div class="lightGrey footAuthor">Designed and Developed by <a class="footLink" href="#">TEDx Committee</a></div>
             </div>
         </footer>
         <!-- Footer End -->
-
     </div>
-   
 </body>
 
 </html>
