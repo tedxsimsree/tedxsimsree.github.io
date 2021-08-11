@@ -1,148 +1,99 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>TEDxSIMSREE</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        
-        <link rel="stylesheet" type="text/css" media="screen" href="../css/animate.css">
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
-        <link rel="stylesheet" type="text/css" media="screen" href="../css/main.css">
-        <script src="../js/wow.min.js"></script>
-    </head>
 
-    <body>
-        <header>
-            <div class="container">
-                <nav>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>TEDxSIMSREE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/animate.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/main.css">
+    <script src="../js/wow.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
                 <input type="checkbox" name="menu" id="nav" class="hidden">
                 <label for="nav" class="navButton">
                     <i></i>
                     <i></i>
                     <i></i>
                 </label>
-                
                 <div class="logo">
                     <a href="../index.html" title="TEDxSIMSREE"><img src="../images/TEDxSIMSREE1.png" alt="TEDxSIMSREE"></a>
                 </div>
                 <div id="navWrap" class="navWrapper">
                     <ul>
                         <li><a href="../index.html">HOME</a></li>
-                        <li><a href="./speakers.html" >SPEAKERS</a></li>
+                        <li><a href="./speakers.html">SPEAKERS</a></li>
                         <li><a href="./team.html" class="active">TEAM</a></li>
                         <li><a href="./contactus.html">CONTACT US</a></li>
                     </ul>
                 </div>
-                
-                </nav>
-            </div>
-        </header>
-
-        <div class="sections">
-            <section id="subPage">
-                <div class="container wow animated fadeInUp">
-                    <div class="pageHeading">Team</div>
-                    <div class="wrapper">
-                        <div class="profileName mt2">Core Committee</div>
-                        <div class="teamContainer">
-                            <div class="teamMember">
-                                <img src="../images/TQV.png" alt="Qudsia Virani">
-                                <div class="memberName">Qudsia Virani</div>
-                            </div>
-                            <div class="teamMember">
-                                <img src="../images/TAW.png" alt="Alok Walke">
-                                <div class="memberName">Alok Walke</div>
-                            </div>
-                            <div class="teamMember">
-                                <img src="../images/TKP.png" alt="Kunal Parekh">
-                                <div class="memberName">Kunal Parekh</div>
-                            </div>
-                            <div class="teamMember">
-                                <img src="../images/TVP.png" alt="Vaishnavi Parekh">
-                                <div class="memberName">Vaishnavi Parekh</div>
-                            </div>
-                            <div class="teamMember">
-                                <img src="../images/TSS.png" alt="Saurabh Salimkumar">
-                                <div class="memberName">Saurabh Salimkumar</div>
-                            </div>
-                            <div class="teamMember">
-                                <img src="../images/TMV.png" alt="Mohammad Virani">
-                                <div class="memberName">Mohammad Virani</div>
-                            </div>
+            </nav>
+        </div>
+    </header>
+    <div class="sections">
+        <section id="subPage">
+            <div class="container wow animated fadeInUp">
+                <div class="pageHeading mb-5">Team</div>
+                <div class="container mx-auto mt-5">
+                    <div class="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-10">
+                        <div class="flex-row justify-center mx-auto  rounded-xl p-6 bg-red-500">
+                            <img class="h-44 w-44 rounded-full object-cover object-cover" src="../images/TQV.png" alt="Qudsia Virani">
+                            <div class="text-center text-xl text-white mt-5">Qudsia Virani</div>
                         </div>
-
-                        <div class="seperator"></div>
-
-
-                        <div class="profileName mt2">Content and Design Team</div>
-                        <div class="teamContainer">
-                            <div class="teamMember">
-                                <img src="../images/TGL.png" alt="Gurdit Lugani">
-                                <div class="memberName">Gurdit Lugani</div>
-                            </div>
-                            <div class="teamMember">
-                                <img src="../images/TSN.png" alt="Suraj Nair">
-                                <div class="memberName">Suraj Nair</div>
-                            </div>
-                            <div class="teamMember">
-                                <img src="../images/TSG.png" alt="Shubham Gawande">
-                                <div class="memberName">Shubham Gawande</div>
-                            </div>
-                            <div class="teamMember">
-                                <img src="../images/TShG.png" alt="Shivam Ghule">
-                                <div class="memberName">Shivam Ghule</div>
-                            </div>
-                            <div class="teamMember">
-                                <img src="../images/TSY.png" alt="Shweta Yadav">
-                                <div class="memberName">Shweta Yadav</div>
-                            </div>
+                        <div class="flex-row justify-center mx-auto  rounded-xl p-6 bg-red-500">
+                            <img class="h-44 w-44 rounded-full object-cover object-cover" src="../images/tedx_prarthana.jpg" alt="Prarthana Thakur">
+                            <div class="text-center text-xl text-white mt-5">Prarthana Thakur</div>
                         </div>
-
-                        <div class="seperator"></div>
-
-                        <div class="profileName mt2">Logistics</div>
-                        <div class="teamContainer">
-                            <div class="teamMember">
-                                <img src="../images/TShS.png" alt="Shivani Salgar">
-                                <div class="memberName">Shivani Salgar</div>
-                            </div>
-
-                            <div class="teamMember">
-                                <img src="../images/TSuN.png" alt="Sudheesh Nair">
-                                <div class="memberName">Sudheesh Nair</div>
-                            </div>
-
-                            <div class="teamMember">
-                                <img src="../images/TDP.png" alt="Deepak Bhargude">
-                                <div class="memberName">Deepak Bhargude</div>
-                            </div>
-
-                            <div class="teamMember">
-                                <img src="../images/TST.png" alt="Sharavanam Theaver">
-                                <div class="memberName">Sharavanam Theaver</div>
-                            </div>
-
-                            <div class="teamMember">
-                                <img src="../images/TTN.png" alt="Tejas Nevrekar">
-                                <div class="memberName">Tejas Nevrekar</div>
-                            </div>
+                        <div class="flex-row justify-center mx-auto  rounded-xl p-6 bg-red-500">
+                            <img class="h-44 w-44 rounded-full object-cover object-cover" src="../images/tedx_viral.jpeg" alt="Viral Thakkar">
+                            <div class="text-center text-xl text-white mt-5">Viral Thakkar</div>
                         </div>
-
-                        <div class="seperator"></div>
+                        <div class="flex-row justify-center mx-auto  rounded-xl p-6 bg-red-500">
+                            <img class="h-44 w-44 rounded-full object-cover" src="../images/tedx_aditya.jpg" alt="Aditya Deskhmukh">
+                            <div class="text-center text-xl text-white mt-5">Aditya Deskhmukh</div>
+                        </div>
+                        <div class="flex-row justify-center mx-auto  rounded-xl p-6 bg-red-500">
+                            <img class="h-44 w-44 rounded-full object-cover" src="../images/tedx_pranav.jpeg" alt="Pranav Borse">
+                            <div class="text-center text-xl text-white mt-5">Pranav Borse</div>
+                        </div>
+                        <div class="flex-row justify-center mx-auto  rounded-xl p-6 bg-red-500">
+                            <img class="h-44 w-44 rounded-full object-cover" src="../images/tedx_ajinkya.jpeg" alt="Ajinkya Saxena">
+                            <div class="text-center text-xl text-white mt-5">Ajinkya Saxena</div>
+                        </div>
+                        <div class="flex-row justify-center mx-auto  rounded-xl p-6 bg-red-500">
+                            <img class="h-44 w-44 rounded-full object-cover" src="../images/tedx_riya.jpg" alt="Riya Sharma">
+                            <div class="text-center text-xl text-white mt-5">Riya Sharma</div>
+                        </div>
+                        <div class="flex-row justify-center mx-auto  rounded-xl p-6 bg-red-500">
+                            <img class="h-44 w-44 rounded-full object-cover" src="../images/tedx_jugal.jpeg" alt="Jugal Bhiwandiwala">
+                            <div class="text-center text-xl text-white mt-5">Jugal Bhiwandiwala</div>
+                        </div>
+                        <div class="flex-row justify-center mx-auto  rounded-xl p-6 bg-red-500">
+                            <img class="h-44 w-44 rounded-full object-cover" src="../images/tedx_suraj.jpg" alt="Suraj Palwe">
+                            <div class="text-center text-xl text-white mt-5">Suraj Palwe</div>
+                        </div>
                     </div>
                 </div>
-            </section>
-        </div>
-
-        <!-- Footer Start -->
-        <footer>
-            <div class="container footContainer">
-                <div class="lightGrey footTed">© TEDxSIMSREE | 2021</div>
-                <div class="lightGrey footAuthor">Designed and Developed by <a class="footLink" href="#">TED<sup>x</sup> SIMSREE Committee</a></div>
             </div>
-        </footer>
-        <!-- Footer End -->
-        
-    </body>
+    </div>
+    </div>
+    </section>
+    </div>
+    <!-- Footer Start -->
+    <footer>
+        <div class="container footContainer">
+            <div class="lightGrey footTed">© TEDxSIMSREE | 2021</div>
+            <div class="lightGrey footAuthor">Designed and Developed by <a class="footLink" href="#">TED<sup>x</sup> SIMSREE Committee</a></div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+</body>
+
 </html>
